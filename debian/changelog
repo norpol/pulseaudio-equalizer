@@ -1,3 +1,10 @@
+pulseaudio-equalizer (2.6) lucid; urgency=low
+
+  * Initial upload to PPA.
+  * Improved detection of existing EQ configuration file.
+
+ -- Conn O Griofa <connogriofa@gmail.com>  Fri, 05 Feb 2010 06:49:21 +0000
+
 pulseaudio-equalizer (2.5) lucid; urgency=low
 
   * Preamp range is now between 0x and 2x, defaulting to 1x

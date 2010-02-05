@@ -126,7 +126,7 @@ fi
 
 # Check if equalizer is set as persistent
 if [ -f $HOME/.pulse/default.pa ]; then
-  if [ "$(cat $HOME/.pulse/default.pa | grep -m1 $SCRIPT_NAME)" = "### Generated from: $SCRIPT_NAME" ]; then
+    if [ "$(cat $HOME/.pulse/default.pa | grep -m1 "### BEGIN: Equalized audio configuration")" = "### BEGIN: Equalized audio configuration" ]; then
     PA_EQUALIZER_PERSISTENCE=1
   fi
 else
@@ -254,7 +254,7 @@ if [ "$1" = "enable-config" ]; then
 
   # If equalizer configuration is already set, delete file
   if [ -f $HOME/.pulse/default.pa ]; then
-    if [ "$(cat $HOME/.pulse/default.pa | grep -m1 $SCRIPT_NAME)" = "### Generated from: $SCRIPT_NAME" ]; then
+    if [ "$(cat $HOME/.pulse/default.pa | grep -m1 "### BEGIN: Equalized audio configuration")" = "### BEGIN: Equalized audio configuration" ]; then
       echo "Equalizer definition detected in file '$HOME/.pulse/default.pa', deleting..."
       rm $HOME/.pulse/default.pa
     fi
@@ -313,7 +313,7 @@ if [ "$1" = "disable-config" ]; then
 
   # If equalizer configuration is present, delete file
   if [ -f $HOME/.pulse/default.pa ]; then
-   if [ "$(cat $HOME/.pulse/default.pa | grep -m1 $SCRIPT_NAME)" = "### Generated from: $SCRIPT_NAME" ]; then
+    if [ "$(cat $HOME/.pulse/default.pa | grep -m1 "### BEGIN: Equalized audio configuration")" = "### BEGIN: Equalized audio configuration" ]; then
      echo "Equalizer definition detected, deleting '$HOME/.pulse/default.pa'..."
      rm $HOME/.pulse/default.pa
    fi
@@ -427,7 +427,7 @@ if [ "$PA_CURRENT_SINK" = "$PA_LADSPA_SINK" ]; then
   echo "Equalizer status: [enabled]"
 
   if [ -f $HOME/.pulse/default.pa ]; then
-    if [ "$(cat $HOME/.pulse/default.pa | grep -m1 $SCRIPT_NAME)" = "### Generated from: $SCRIPT_NAME" ]; then
+    if [ "$(cat $HOME/.pulse/default.pa | grep -m1 "### BEGIN: Equalized audio configuration")" = "### BEGIN: Equalized audio configuration" ]; then
       echo "Equalizer configuration status: [enabled]"
     else
       echo "Equalizer configuration status: [disabled]"
@@ -449,7 +449,7 @@ else
   echo "Equalizer status: [disabled]"
 
   if [ -f $HOME/.pulse/default.pa ]; then
-    if [ "$(cat $HOME/.pulse/default.pa | grep -m1 $SCRIPT_NAME)" = "### Generated from: $SCRIPT_NAME" ]; then
+    if [ "$(cat $HOME/.pulse/default.pa | grep -m1 "### BEGIN: Equalized audio configuration")" = "### BEGIN: Equalized audio configuration" ]; then
       echo "Equalizer configuration status: [enabled]"
       echo "Equalizer plugin: [$PA_LADSPA_PLUGIN/$PA_LADSPA_LABEL]"
       echo "Equalizer control: [$PA_LADSPA_CONTROLS]"
