@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+  
+include /usr/share/cdbs/1/rules/debhelper.mk
+
+install/pulseaudio-equalizer::
+	install -m755 '$(CURDIR)/usr/bin/pulseaudio-equalizer' $(CURDIR)/debian/pulseaudio-equalizer/usr/bin
+	install -m755 '$(CURDIR)/usr/bin/pulseaudio-equalizer-gtk' $(CURDIR)/debian/pulseaudio-equalizer/usr/bin
+	install -m755 '$(CURDIR)/usr/share/pulseaudio-equalizer/pulseaudio-equalizer.py' $(CURDIR)/debian/pulseaudio-equalizer/usr/share/pulseaudio-equalizer
+	install '$(CURDIR)/usr/share/applications/pulseaudio-equalizer.desktop' $(CURDIR)/debian/pulseaudio-equalizer/usr/share/applications
+
+binary-install/pulseaudio-equalizer::
+	dh_pysupport

@@ -1,0 +1,11 @@
+Package: pulseaudio-equalizer
+Version: 2.5
+Architecture: all
+Maintainer: Conn O'Griofa <connogriofa@gmail.com>
+Installed-Size: 208
+Depends: python (>= 2.3), python-support (>= 0.90.0), swh-plugins, ladspa-sdk, python-gtk2, python-glade2, python-gobject, python-gnome2
+Section: admin
+Priority: optional
+Homepage: http://ubuntuforums.org/showthread.php?t=1308838
+Description: PulseAudio Equalizer - LADSPA plugin graphical user interface
+ GUI for PulseAudio's LADSPA interface using Steve Harris' Multiband EQ (mbeq_1197) plugin
