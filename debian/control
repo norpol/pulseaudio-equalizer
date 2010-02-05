@@ -1,7 +1,7 @@
 Source: pulseaudio-equalizer
 Section: admin
 Priority: optional
-Maintainer: Conn O'Griofa <connogriofa@gmail.com>
+Maintainer: Conn O Griofa <connogriofa@gmail.com>
 Build-Depends: cdbs, debhelper (>= 5)
 Build-Depends-Indep: python-support (>= 0.5.3)
 Standards-Version: 3.8.3
