@@ -5,7 +5,7 @@
 # Intended for use in conjunction with pulseaudio-equalizer script
 #
 # Author: Conn O'Griofa <connogriofa AT gmail DOT com>
-# Version: 2.5 (04/02/2010)
+# Version: (see '/usr/pulseaudio-equalizer' script)
 #
 
 import pygtk

@@ -21,7 +21,7 @@ PA_CURRENT_PRESET=""
 PRESET_DIR1=$HOME/.pulse/presets
 PRESET_DIR2=/usr/share/pulseaudio-equalizer/presets
 SCRIPT_NAME=pulseaudio-equalizer
-SCRIPT_VERSION="2.5 (04/02/2010)"
+SCRIPT_VERSION="2.7 (05/02/2010)"
 CONFIG_NAME=$HOME/.pulse/equalizerrc
 LOG_NAME=$HOME/Desktop/pulseaudio-equalizer.log
 
