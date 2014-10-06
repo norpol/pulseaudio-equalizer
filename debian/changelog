@@ -1,0 +1,71 @@
+pulseaudio-equalizer (2.7) lucid; urgency=low
+
+  * debian/control:
+    - Removed comma from maintainer's name in order to match GPG key.
+
+ -- Conn O Griofa <connogriofa@gmail.com>  Fri, 05 Feb 2010 08:13:41 +0000
+
+pulseaudio-equalizer (2.6) lucid; urgency=low
+
+  * Initial upload to PPA.
+  * Improved detection of existing EQ configuration file.
+
+ -- Conn O Griofa <connogriofa@gmail.com>  Fri, 05 Feb 2010 06:49:21 +0000
+
+pulseaudio-equalizer (2.5) lucid; urgency=low
+
+  * Preamp range is now between 0x and 2x, defaulting to 1x
+  * Improved script compatibility with PulseAudio 0.9.21/Lucid Lynx
+  * Misc. bugfixes to prevent hangs on moving streams
+  * Optimized script execution to improve speed, minimize popping sounds
+  * Adjusted support script/added GUI wrapper (Fedora guideline compliance)
+
+ -- Conn <conn@portable>  Thu, 04 Feb 2010 05:37:24 +0000
+
+pulseaudio-equalizer (2.4) karmic; urgency=low
+
+  * Preamp range now 1x to 2x, default is 1.5x and increments are now allowed
+  * Added Flat preset
+  * Selecting a preset will now apply settings immediately
+  * Improved script to make re-enabling EQ slightly faster
+  * Preamp setting is no longer controlled by presets
+  * Added application icon
+
+ -- Conn <conn@inspiron>  Thu, 19 Nov 2009 15:33:53 +0000
+
+pulseaudio-equalizer (2.3) karmic; urgency=low
+
+  * Better formatting of scale values on interface
+  * Improved preset handling (preset list will always remain sorted)
+  * Script: ensure that user preset folder is always available
+
+ -- Conn <conn@inspiron>  Tue, 17 Nov 2009 13:10:29 +0000
+
+pulseaudio-equalizer (2.2) karmic; urgency=low
+
+  * Major interface re-write: now supports pre-amp.
+  * Script: fixed issue with volume in persistent configurations 
+
+ -- Conn <conn@inspiron>  Sat, 14 Nov 2009 15:46:15 +0000
+
+pulseaudio-equalizer (2.1) karmic; urgency=low
+
+  * Added debug option
+  * "Keep Settings" / selecting presets will will take immediate effect
+  * debian/control:
+    - added swh-plugins, ladspa-sdk to depends.
+
+ -- Conn <conn@inspiron>  Tue, 10 Nov 2009 01:43:59 +0000
+
+pulseaudio-equalizer (2.0) karmic; urgency=low
+
+  * Added presets (based on VLC)
+  * Better support for loading user presets 
+
+ -- Conn <conn@inspiron>  Sun, 08 Nov 2009 11:46:01 +0000
+
+pulseaudio-equalizer (1.9) karmic; urgency=low
+
+  * Initial release
+
+ -- Conn <conn@inspiron>  Sun, 08 Nov 2009 05:02:21 +0000
