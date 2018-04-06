@@ -2,13 +2,13 @@ pulseaudio-equalizer
 ====================
 
 
-##Introduction
+## Introduction
 This is an unofficial mirror of Conn O'Griofa's pulseaudio-equalizer on
 [launchpad.net](https://code.launchpad.net/~psyke83/+junk/pulseaudio-equalizer).   
 It was converted into a git repository by `bzr fast-export --plain . | git fast-import` using
 the package bzr-fastimport.
 
-##Files
+## Files
 
 - Presets are located under [/usr/share/pulseaudio-equalizer/presets/](./usr/share/pulseaudio-equalizer/presets/)
 - pulseaudio-equalizer-gtk shell script under [/usr/bin/pulseaudio-equalizer-gtk](./usr/bin/pulseaudio-equalizer-gtk)
@@ -16,6 +16,6 @@ the package bzr-fastimport.
 - pulseaudio-equalizer shell script under [/usr/bin/pulseaudio-equalizer](./usr/bin/pulseaudio-equalizer)
 
 
-##Issues
+## Issues
 
 See the github issue tracker, alternative send an email to me or Conn O'Griofa.
